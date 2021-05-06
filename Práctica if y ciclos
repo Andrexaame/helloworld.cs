@@ -1,0 +1,297 @@
+using System;
+
+namespace CndicionalIf
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      //1.)
+      //Aplicación en la cual un usuario ingresa horas trabajadas, el valor de cada hora y muestra  el total a pagar y los minutos que trabajo
+      /*
+      //variables
+       int hTrabajadas, vHoras, tPagar, mTrabajados;
+       
+       Console.WriteLine("Ingrese el total de horas trabajadas: ");
+       hTrabajadas = int.Parse(Console.ReadLine());
+       
+       Console.WriteLine("Ingrese el valor de las horas: ");
+       vHoras = int.Parse(Console.ReadLine());
+       
+       tPagar = hTrabajadas * vHoras;
+       mTrabajados = hTrabajadas * 60;
+       
+       Console.WriteLine(" El total a pagar es de: " + tPagar);
+       Console.WriteLine(" Cantidad de minutos trabajados: " + mTrabajados);
+      */
+      
+      //Aplicación que lea nombre de un trabajador cantidad de meses que trabajo al año y  muestre el porcentaje de meses que trabajo.
+      /*
+      // variables
+      string nombre;
+      int mTrabajados, pMesesTrabajados;
+      
+      Console.WriteLine(" Escriba su nombre: ");
+      nombre = Console.ReadLine();
+      
+      Console.WriteLine("Ingrese cantidad de meses trabajados: ");
+      mTrabajados = int.Parse(Console.ReadLine());
+      
+      pMesesTrabajados = (mTrabajados/100)*12;
+      Console.WriteLine(" El porcentaje de meses trabajados es de: " + pMesesTrabajados + "% ");
+      */
+      
+      //Aplicación que calcule el cambio de peso colombiano al dólar con el valor del día actual.
+      /*
+      //variables
+
+      double pesosCol, total, preDolar = 3639.12;
+      
+      Console.WriteLine(" Ingrese la cantidad de Pesos Colombianos a convertir: ");
+      
+      pesosCol = double.Parse(Console.ReadLine());
+      
+      total = pesosCol / preDolar; 
+      Console.WriteLine(" Cantidad de dolares" + total) ;
+      */
+      
+      
+      //2.) 
+      
+      // Aplicación que compare dos números y muestre el mensaje de cual es mayor. 
+      /*
+      int num1, num2;
+      Console.WriteLine(" ingrese el valor 1: ");
+      num1 = int.Parse(Console.ReadLine());
+      Console.WriteLine("Ingrese el valor 2: ");
+      num2 = int.Parse(Console.ReadLine());
+      
+      if(num1 >= num2)
+      {
+        if(num1 == num2)
+        {
+          Console.WriteLine(" Los valores son iguales");
+        }
+        else
+        {
+          Console.WriteLine( " El numero 1 es mayor " + num1);
+        }
+      }else
+      {
+        Console.WriteLine( " el numero 2 es mayor " + num2);
+      }
+      */
+      
+      //Aplicacióni el número es par muestre el doble del número y si es  impar muestre la mitad del número.
+      /*
+      double numero;
+      
+      Console.WriteLine("Ingrese un valor: ");
+      numero = double.Parse(Console.ReadLine());
+      
+      if(numero%2 ==0)
+      {
+        numero = numero *2;
+        Console.WriteLine(" numero par" + numero);
+      }
+      else
+      {
+        numero = numero / 2;
+        Console.WriteLine(" numero impar " + numero);
+      }
+      */
+      
+      //Aplicación que calcule la suma de 3 números si la suma es mayor que 100 mostrar un  mensaje si es menor mostrar otro mensajee. 
+      /*
+      int num1, num2, num3, total;
+      
+      Console.WriteLine("Ingrese un valor: ");
+      num1 = int.Parse(Console.ReadLine());
+      
+      Console.WriteLine("Ingresé un valor");
+      num2 = int.Parse(Console.ReadLine());
+
+      Console.WriteLine("Ingresé un valor");
+      num3 = int.Parse(Console.ReadLine());
+      total = num1 + num2 + num3;
+      if(total >100)
+      {
+        Console.WriteLine("El valor es mayor a 100: " + total);
+      }
+      else
+      {
+        Console.WriteLine("El valor es menor o igual a 100: " + total);
+      }
+      */
+      
+      //Aplicación que lea un numero si el número es mayor que 10 muestre el cuadrado del  número si no muestre el residuo de dividir por 3.
+      /*
+      int numero, cuadrado, residuo;
+      Console.WriteLine("Ingresé un valor");
+      numero = int.Parse(Console.ReadLine());
+      
+      if(numero >= 10){
+        cuadrado= numero * numero;
+
+        Console.WriteLine("Numero mayor o igual a 10: "+ cuadrado);
+      }
+      else
+      {
+         residuo = numero%3;
+         Console.WriteLine(" Numero menor a 10: " + residuo);
+      }
+      */
+      
+      //Aplicación que determine si un alumno aprueba a reprueba un curso, sabiendo que  aprobara si su promedio de tres calificaciones es mayor o igual a 70; reprueba en caso  contrario
+       /*
+       double nota1, nota2, nota3, promedio;
+       
+       Console.WriteLine("Ingresé la primera nota");
+       nota1 = int.Parse(Console.ReadLine());
+       
+       Console.WriteLine("Ingresé la segunda nota");
+       nota2 = int.Parse(Console.ReadLine());
+       
+       Console.WriteLine("Ingresé la tercera nota");
+     nota3 = int.Parse(Console.ReadLine());
+     
+     promedio = (nota1 + nota2 + nota3)/3;
+     
+     if(promedio >= 70)
+     {
+       Console.WriteLine("Aprobado");
+     }
+     else
+     {
+       Console.WriteLine("Reprobado");
+     }
+     */
+     
+     
+     //3.)
+    // Aplicación que muestre los pares que hay entre 1 y N, siendo N un numero suministrado  por el usuario.
+    /*
+     int numero;
+     
+     Console.WriteLine("Ingresé un valor");
+     numero = int.Parse(Console.ReadLine());
+     
+     while(numero >= 1)
+     {
+       if(numero%2 ==0)
+       {
+         Console.WriteLine(numero);
+       }
+       numero--;
+     }
+     
+     */
+     
+     //Aplicación que permita ingresar N datos correspondientes al género de N, número de  personas y determine el porcentaje de hombres y mujeres que hay, siendo N un numero  suministrado por el usuario.
+      /*
+      int genero=1, cantPersonas, hombre = 0, mujer = 0; 
+      
+      double pHombres, pMujeres;
+     
+     Console.WriteLine("Ingresé la cantidad de personas");
+     cantPersonas = int.Parse(Console.ReadLine());
+     
+     for(int i = 1; i<=cantPersonas; i++)
+     {
+       Console.WriteLine("Ingresé 1 si es hombre, 2 si es mujer");
+        genero = int.Parse(Console.ReadLine());
+        
+        if(genero ==1)
+        {
+          hombre++;
+        }
+        else
+        {
+          mujer++;
+        }
+     }
+     
+     pHombres = (hombre * 100)/cantPersonas;
+     pMujeres = (mujer * 100)/cantPersonas;
+
+      Console.WriteLine("Porcentaje de hombres " + pHombres);
+      Console.WriteLine("Porcentaje de mujeres " + pMujeres);
+      
+      Console.WriteLine("Press Enter");
+     */
+     
+     
+     //Aplicación que permita calcular el promedio de notas de un grupo de 20 aprendices que  cursaron el curso de Programación. 
+     /*
+     int notas = 0, promedio, suma = 0;
+     
+     for(int i = 1; i<=20; i++)
+     {
+       for(int j = 1; j<=3; j++)
+       {
+         Console.WriteLine(" Ingresé el valor de la nota " + j + " del aprendiz " + i);
+         notas = int.Parse(Console.ReadLine());
+         suma = suma + notas;
+       }
+       promedio = suma/3;
+       Console.WriteLine(" El promedio es de: " + promedio);
+       suma = 0;
+       notas = 0;
+     }
+     
+     Console.WriteLine("Prees enter");
+     */
+     //Aplicación que permita sumar consecutivamente y cuando la suma sea superior a 100  deje de pedir números y muestre el total.
+     /*
+     int i, suma=0;
+     Console.WriteLine("Ingresé un valor");
+     i = int.Parse(Console.ReadLine());
+     suma = suma + i;
+     
+     while(suma<= 100)
+     {
+       Console.WriteLine("Ingresé un valor");
+       i = int.Parse(Console.ReadLine());
+       suma = suma + i;
+     }
+     Console.WriteLine("la suma es igual a: "+ suma);
+     Console.WriteLine("press enter");
+     */
+     
+     //Aplicación que muestre los números del 1 al 10.
+     /*
+      for(int i= 1; i<=10; i++)
+      {
+        Console.WriteLine(" " + i);
+      }
+      Console.WriteLine("Press enter");*/
+     
+     //Construir un programa que pida datos al usuario hasta que introduzca el 0.
+     /*
+     int numero=1;
+     
+     while(numero!=0)
+     {
+       Console.WriteLine("Ingresé un valor");
+       numero = int.Parse(Console.ReadLine());
+     }
+     Console.WriteLine("Press enter");
+     */
+     //Construir un programa que sume todos los números que introduce el usuario hasta que  introduzca el número cero.
+     /*
+     int numero = 1, suma = 0;
+     
+     while(numero!=0)
+     {
+       Console.WriteLine("Ingresé un valor");
+       numero = int.Parse(Console.ReadLine());
+       suma = suma + numero;
+     }
+     Console.WriteLine("El valor total sumado: " + suma);
+     Console.WriteLine("Press Enter");
+      */
+      Console.ReadKey();
+      
+    }
+  }
+}
